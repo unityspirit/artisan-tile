@@ -149,13 +149,12 @@ const burger = document.getElementById('burger');
 const drawer = document.getElementById('nav-drawer');
 if (burger && drawer) {
   burger.addEventListener('click', () => {
-    const isOpen = !drawer.hidden;
-    drawer.hidden = isOpen;
-    burger.classList.toggle('open', !isOpen);
+    drawer.classList.toggle('open');
+    burger.classList.toggle('open');
   });
   drawer.querySelectorAll('.drawer-link').forEach(link => {
     link.addEventListener('click', () => {
-      drawer.hidden = true;
+      drawer.classList.remove('open');
       burger.classList.remove('open');
     });
   });

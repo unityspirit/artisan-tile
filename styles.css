@@ -192,8 +192,11 @@ html { scroll-behavior: smooth; scroll-snap-type: y proximity; }
   background: rgba(0,0,0,0.95);
   backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
   z-index: 99; padding: 20px;
-  display: flex; flex-direction: column; gap: 16px;
+  display: none; flex-direction: column; gap: 16px;
   border-bottom: 1px solid rgba(212,168,67,0.3);
+}
+.nav-drawer.open {
+  display: flex;
 }
 .drawer-link {
   color: #fff; text-decoration: none;
@@ -274,6 +277,8 @@ html { scroll-behavior: smooth; scroll-snap-type: y proximity; }
 @media (max-width: 768px) {
   .nav-links, .nav-cta { display: none; }
   .burger { display: flex; }
+  .nav-drawer { display: none; }
+  .nav-drawer.open { display: flex; }
   .page { padding-top: 80px; }
   .step-item { flex-direction: column; gap: 12px; }
   .hero-actions { flex-direction: column; width: 100%; }
