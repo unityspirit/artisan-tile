@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Artisan Tile & Bathroom Renovation — Premium tile installation and bathroom remodeling services in Brantford and Hamilton, Ontario.">
+  <meta name="keywords" content="tile installation, bathroom renovation, Brantford, Hamilton, Ontario, tile contractor, bathroom remodel">
+  <meta property="og:title" content="Artisan Tile — Premium Bathroom Renovation">
+  <meta property="og:description" content="Premium tile installation and bathroom remodeling in Brantford & Hamilton, Ontario.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_CA">
+  <title>Artisan Tile — Premium Bathroom Renovation & Tile Installation | Brantford & Hamilton</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-content">
+      <img src="images/logo.svg" alt="Artisan Tile" class="loader-logo">
+      <p class="loader-text">Loading Experience...</p>
+      <div class="progress-track"><div id="progress-bar" class="progress-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- KINEMATIC CANVAS BACKGROUND -->
+  <canvas id="gl-canvas"></canvas>
+  
+  <!-- GRAIN OVERLAY -->
+  <div class="grain-overlay"></div>
+
+  <!-- FIXED NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="images/logo.svg" alt="Artisan Tile Logo" class="logo-img">
+        <span class="logo-text">ARTISAN TILE</span>
+      </div>
+      <div class="nav-links">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#contact" class="btn-outline">Get a Quote</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE DRAWER -->
+  <div class="nav-drawer" id="nav-drawer" hidden>
+    <a href="#hero" class="drawer-link">Home</a>
+    <a href="#services" class="drawer-link">Services</a>
+    <a href="#portfolio" class="drawer-link">Portfolio</a>
+    <a href="#process" class="drawer-link">Process</a>
+    <a href="#contact" class="drawer-link">Contact</a>
+  </div>
+
+  <!-- MAIN SCROLL CONTAINER -->
+  <div id="ui-layer">
+    <div class="stage">
+      
+      <!-- SECTION 0: HERO -->
+      <section class="page is-active" data-index="0" id="hero">
+        <div class="page-content center-content">
+          <h1 class="hero-title reveal-3d">Craftsmanship<br>Set in <span class="accent-text">Stone.</span></h1>
+          <p class="hero-subtitle reveal-3d">Premium Tile Installation & Bathroom Renovation in Brantford & Hamilton.</p>
+          <div class="hero-actions reveal-3d">
+            <a href="#portfolio" class="btn-primary">View Our Work</a>
+            <a href="#contact" class="btn-outline">Consult with an Artisan</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 1: SERVICES -->
+      <section class="page" data-index="1" id="services">
+        <div class="page-content">
+          <h2 class="section-title reveal-3d">Our <span class="accent-text">Services</span></h2>
+          <div class="grid-cards reveal-3d">
+            <div class="card glow-card">
+              <h3>Bathroom Remodeling</h3>
+              <p>Complete transformations from demolition to the final polish. We build spa-like retreats in your own home.</p>
+            </div>
+            <div class="card glow-card">
+              <h3>Custom Tile Installation</h3>
+              <p>Precision installation of ceramic, porcelain, natural stone, and glass tiles for floors, walls, and backsplashes.</p>
+            </div>
+            <div class="card glow-card">
+              <h3>Waterproofing Systems</h3>
+              <p>State-of-the-art waterproofing to ensure your luxury shower lasts a lifetime without leaks or mold.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: PORTFOLIO -->
+      <section class="page" data-index="2" id="portfolio">
+        <div class="page-content">
+          <h2 class="section-title reveal-3d">Featured <span class="accent-text">Projects</span></h2>
+          <div class="grid-cards reveal-3d">
+            <div class="card">
+              <h3>The Emerald Enclave</h3>
+              <p>A stunning walk-in shower featuring intricate herringbone subway tiles in deep emerald green with brass fixtures.</p>
+            </div>
+            <div class="card">
+              <h3>Calacatta Dream</h3>
+              <p>Large format Calacatta gold marble tiles spanning an entire master ensuite, exuding timeless luxury.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: PROCESS -->
+      <section class="page" data-index="3" id="process">
+        <div class="page-content">
+          <h2 class="section-title reveal-3d">The Artisan <span class="accent-text">Process</span></h2>
+          <div class="process-steps reveal-3d">
+            <div class="step-item">
+              <span class="step-num">01</span>
+              <div>
+                <h3>Design & Consultation</h3>
+                <p>We collaborate with you to select the perfect materials and layout.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <span class="step-num">02</span>
+              <div>
+                <h3>Preparation</h3>
+                <p>Meticulous surface prep and professional waterproofing.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <span class="step-num">03</span>
+              <div>
+                <h3>Precision Installation</h3>
+                <p>Flawless tile cutting, layout, and grouting by master craftsmen.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: CONTACT -->
+      <section class="page" data-index="4" id="contact">
+        <div class="page-content center-content">
+          <h2 class="section-title reveal-3d">Start Your <span class="accent-text">Renovation</span></h2>
+          <p class="hero-subtitle reveal-3d">Contact us today for a free consultation in Brantford, Hamilton, and surrounding areas.</p>
+          <div class="contact-box reveal-3d card">
+            <h3>Request a Quote</h3>
+            <form class="contact-form">
+              <input type="text" placeholder="Your Name" required>
+              <input type="email" placeholder="Email Address" required>
+              <input type="tel" placeholder="Phone Number" required>
+              <textarea placeholder="Tell us about your project..." rows="4" required></textarea>
+              <button type="submit" class="btn-primary" style="width:100%;border:none;">Send Request</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

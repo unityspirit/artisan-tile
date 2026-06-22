@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect x="20" y="20" width="60" height="60" fill="none" stroke="#D4A843" stroke-width="4" transform="rotate(45 50 50)"/>
+  <path d="M 30 50 L 50 30 L 70 50 L 50 70 Z" fill="#D4A843"/>
+  <text x="50" y="55" font-family="Montserrat, sans-serif" font-weight="bold" font-size="20" fill="#1a1a1a" text-anchor="middle">AT</text>
+</svg>
