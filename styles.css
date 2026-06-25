@@ -273,6 +273,19 @@ html { scroll-behavior: smooth; scroll-snap-type: y proximity; }
   background: rgba(255, 255, 255, 0.1);
 }
 
+/* === CONTACT INFO === */
+.contact-info { margin-bottom: 30px; }
+.contact-details { display: flex; flex-direction: column; gap: 8px; }
+.contact-item {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #ffffff; text-shadow: var(--ts-dark);
+}
+.contact-link {
+  color: var(--gold); text-decoration: none;
+  transition: color 0.3s;
+}
+.contact-link:hover { color: #fff; }
+
 /* === MOBILE === */
 @media (max-width: 768px) {
   .nav-links, .nav-cta { display: none; }
